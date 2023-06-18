@@ -1,0 +1,127 @@
+.container {
+  max-width: 95%;
+  height: 75%;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+}
+.container .box {
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-row-gap: 1rem;
+}
+.container .box__profile-box {
+  display: grid;
+  grid: 2rem 2rem/2rem max-content;
+  align-items: center;
+  justify-items: start;
+  grid-column-gap: 1rem;
+}
+.container .box__profile-box img {
+  height: 2rem;
+  box-sizing: content-box;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+@media (min-width: 660px) {
+  .container__box5 {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 990px) {
+  .container__box5 {
+    grid-column: 2/-1;
+  }
+}
+@media (min-width: 1200px) {
+  .container__box3 {
+    grid-row: 1/span 2;
+    grid-column: 3/4;
+  }
+  .container__box5 {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1350px) {
+  .container__box1 {
+    grid-column: 1/span 2;
+  }
+  .container__box3 {
+    grid-row: 1/span 2;
+    grid-column: 4/5;
+  }
+  .container__box5 {
+    grid-column: 2/span 2;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.container__box1 {
+  background-color: hsl(263, 55%, 52%);
+}
+.container__box2 {
+  background-color: hsl(217, 19%, 35%);
+}
+.container__box3 {
+  background-color: #fff;
+}
+.container__box4 {
+  background-color: #fff;
+}
+.container__box5 {
+  background-color: hsl(219, 29%, 14%);
+}
+.container .box {
+  box-shadow: 0 2px 5rem rgba(162, 191, 221, 0.5);
+}
+.container .box__profile-box {
+  color: hsl(0, 0%, 81%);
+  font-size: 1.2rem;
+}
+.container .box__profile-box--name {
+  align-self: end;
+}
+.container .box__profile-box--status {
+  opacity: 0.5;
+  align-self: start;
+}
+.container .box__paragraph {
+  opacity: 0.5;
+  font-size: 1.8rem;
+}
+.container__box1 {
+  color: #fff;
+}
+.container__box2 {
+  color: hsl(210, 46%, 95%);
+}
+.container__box3 {
+  color: hsl(219, 29%, 14%);
+}
+.container__box4 {
+  color: hsl(219, 29%, 14%);
+}
+.container__box5 {
+  color: hsl(210, 46%, 95%);
+}/*# sourceMappingURL=style.css.map */
